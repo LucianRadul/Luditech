@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/culoareaAiaBlana"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtHelloWorld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="140dp"
+        android:text="Luditech"
+        android:textSize="50dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/EdtTxtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHelloWorld"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Name"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/EdtTxtScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EdtTxtName"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Score"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/EdtTxtDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EdtTxtScore"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Date"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/idBtnAddData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/EdtTxtDate"
+        android:text="Add data"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/idBtnLeaderboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/idBtnAddData"
+        android:text="Display leaderboard"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/idBtnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idBtnLeaderboard"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:text="Logout"/>
+
+</RelativeLayout>
